@@ -2,7 +2,7 @@ name: AWS Amazon Linux 2 3.7.9
 on: [push]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: amazonlinux:2.0.20200722.0-with-sources
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.7.9
