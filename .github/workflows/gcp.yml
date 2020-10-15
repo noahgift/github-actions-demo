@@ -1,4 +1,4 @@
-name: Python application test with Github Actions
+name: GCP Python 3.7
 on: [push]
 jobs:
   build:
@@ -11,10 +11,14 @@ jobs:
         python-version: 3.7.9
     - name: Install dependencies
       run: |
-        make install
+        make install-gcp
     - name: Lint
       run: |
         make lint
     - name: Test
       run: |
         make test
+    - name: Format
+      run: |
+        make format
+        
