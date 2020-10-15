@@ -12,3 +12,12 @@ jobs:
     - name: Install dependencies
       run: |
         make install-amazon-linux2
+    - name: Lint
+      run: |
+        make lint
+    - name: Test
+      run: |
+        make test
+    - name: Format
+      run: |
+        make format
