@@ -1,0 +1,14 @@
+name: AWS 3.7.9
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.7.9
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7.9
+    - name: Install dependencies
+      run: |
+        make install-amazon-linux2
