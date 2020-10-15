@@ -1,4 +1,4 @@
-name: AWS 3.7.9
+name: AWS Amazon Linux 2 3.7.9
 on: [push]
 jobs:
   build:
@@ -11,7 +11,7 @@ jobs:
         python-version: 3.7.9
     - name: Install dependencies
       run: |
-        make install-amazon-linux2
+        make install-amazon-linux
     - name: Lint
       run: |
         make lint
