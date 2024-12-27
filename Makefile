@@ -12,7 +12,7 @@ install-aws:
 
 install-amazon-linux:
 	pip install --upgrade pip &&\
-		pip install -r amazon-linux.txt
+	pip install -r amazon-linux.txt
 lint:
 	pylint --disable=R,C hello.py
 
@@ -20,4 +20,5 @@ format:
 	black *.py
 
 test:
+	python -m mypy --strict *.py &&\
 	python -m pytest -vv --cov=hello test_hello.py
