@@ -3,3 +3,4 @@ click
 pylint
 pytest-cov
 black
+mypy

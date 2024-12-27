@@ -2,3 +2,4 @@ pytest
 click
 pylint
 pytest-cov
+mypy
