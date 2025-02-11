@@ -20,4 +20,4 @@ format:
 	black *.py
 
 test:
-	python -m pytest -vv --cov=hello test_hello.py
+	python3 -m pytest -vv --cov=hello test_hello.py
